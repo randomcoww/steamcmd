@@ -5,9 +5,14 @@
 name: Image Build
 on:
   workflow_dispatch:
+  schedule:
+  - cron: "0 4 * * 0"
   push:
-    tags:
-      - v*
+    paths-ignore:
+    - .github/**
+    - README.md
+    branches:
+    - master
 
 jobs:
   build:
