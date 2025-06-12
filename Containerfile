@@ -1,4 +1,4 @@
-FROM docker.io/steamcmd/steamcmd:centos-9
+FROM docker.io/steamcmd/steamcmd:centos
 
 RUN set -x \
   \
